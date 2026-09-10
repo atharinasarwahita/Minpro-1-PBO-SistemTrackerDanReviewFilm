@@ -52,6 +52,7 @@ public void tambahFilm() {
     
     daftarFilm.add(new Film(idFilm, judul, sutradara, tahunRilis, genre, durasi));
     System.out.println("Yeayy, film kamu berhasil ditambahkan!");
+    lihatFilm();
 }
 
 public void tambahReview() {
@@ -111,7 +112,7 @@ public void tambahReview() {
 
             daftarReview.add(new Review(idReview, ulasan, rating));
             System.out.println("Yeayy, review kamu berhasil ditambahkan!");
-            break;
+            lihatFilm();
         }
     }
     
@@ -129,7 +130,7 @@ public void lihatFilm() {
     } else {
         System.out.println("\n --------- DAFTAR FILM ---------");
         for (Film f : daftarFilm) {
-            System.out.println("ID Film: " + f.getIdFilm() + " | Judul: " + f.getJudul() + " | Sutradara: " + f.getSutradara() + " |  Tahun Rilis: " + f.getTahunRilis() + " | Genre: " + f.getGenre() + " | Durasi: " + f.getDurasi()+"menit");
+            System.out.println("ID Film: " + f.getIdFilm() + " | Judul: " + f.getJudul() + " | Sutradara: " + f.getSutradara() + " |  Tahun Rilis: " + f.getTahunRilis() + " | Genre: " + f.getGenre() + " | Durasi: " + f.getDurasi()+" menit");
     }
     }
     if (daftarReview.isEmpty()) {
@@ -151,7 +152,7 @@ public void updateReview() {
             return;
     }
     
-    System.out.print("Masukkan ID review yang mau di-update: ");
+    System.out.print("\nMasukkan ID review yang mau di-update: ");
     if (!input.hasNextInt()) {
         System.out.println("ID harus berupa angka!");
         input.nextLine();
@@ -164,9 +165,9 @@ public void updateReview() {
     for (Review r : daftarReview) {
         if (r.getIdReview() == updateIdReview) {
             adaReview = true;
-            System.out.println("Pilih ulasan film yang ingin diubah:");
             System.out.println("(1) Rating");
             System.out.println("(2) Ulasan");
+            System.out.println("Pilih ulasan film yang ingin diubah:");
             int updateReviewPilihan = input.nextInt();
             input.nextLine();
             
@@ -176,14 +177,15 @@ public void updateReview() {
                     input.nextLine();
                     r.setRating(ratingBaru);
                     System.out.println("Yeayy, rating baru kamu berhasil ditambahkan!");
+                    lihatFilm();
                     return;
                 }
                     
                 case 2 -> { System.out.print("Ulasan Film Baru: ");
                     String ulasanBaru = input.nextLine();
-                    input.nextLine();
                     r.setUlasan(ulasanBaru);
                     System.out.println("Yeayy, ulasan terbaru kamu berhasil ditambahkan!");
+                    lihatFilm();
                     return;
                 }
                 
@@ -195,7 +197,7 @@ public void updateReview() {
     System.out.println("ID Review tidak ditemukan!");
     }
 }
-
+ 
 //DELETE REVIEW
 public void hapusReview(){
     lihatFilm();
@@ -203,7 +205,7 @@ public void hapusReview(){
         return;
     }
     
-    System.out.print("Masukkan ID Review yang mau dihapus: ");
+    System.out.print("\nMasukkan ID Review yang mau dihapus: ");
     if (!input.hasNextInt()) {
         System.out.println("ID harus berupa angka!");
         input.nextLine();
