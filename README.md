@@ -8,49 +8,60 @@ Program ini menerapkan konsep dasar Program Berorientasi Objek (PBO) dengan meng
 ## 2. Alur Program
 Program ini dimulai dengan menampilkan menu utama. Pengguna dapat memilih menu menggunakan input angka.  
 
-<img width="438" height="231" alt="image" src="https://github.com/user-attachments/assets/a8a4d653-d025-490c-8856-7e51d8a70452" />
+
 
 
 Setiap pilihan yang di-input akan menjalankan proses yang berbeda, kemudian program menjalankan looping (kembali ke menu utama) sampai pengguna memilih menu ke 6, yaitu Keluar.  
 
-### Tambah Film
+### 2.1. Tambah Film
 Menu pertama adalah menu tambah film (Create) yang digunakan untuk menambahkan data film baru. Pengguna dapat mengisi ID film, judul, sutradara, tahun rilis, genre, dan durasi. 
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/cc6f6260-b913-4635-9ad7-2167d8bf1db4" />
+<p align="center">
+<img width="1563" height="552" alt="image" src="https://github.com/user-attachments/assets/24f62e8a-1422-49b0-a7f1-9d3e77923efc" />
+</p>
 
 Saat memasukkan ID, sistem memvalidasi apakah ID sudah digunakan atau belum, hal ini dilakukan untuk mencegah agar tidak adanya data ID yang duplikat.  
 
-### Tambah Review  
+### 2.2. Tambah Review  
 Menu kedua yaitu menu untuk menambahkan (Create) ulasan dan juga rating pada film yang sudah disimpan. Pengguna memasukkan ID film yang ingin di-review, ID review, nilai rating (1 - 5), dan ulasan berupa teks. 
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/4efca0e2-8da7-4d0d-9a12-e9b60bac97b5" />
+<p align="center">
+<img width="1563" height="508" alt="image" src="https://github.com/user-attachments/assets/0a4b8af2-aadf-44a4-a41e-939284433e2b" />
+</p>
 
 Pada menu ini, sistem juga memvalidasi apakah ID Film yang dimasukkan ada di dalam list, dan apakah ID Review sudah digunakan atau belum.  
 
-### Lihat Film & Review  
+### 2.3. Lihat Film & Review  
 Menu ke-tiga ini digunakan untuk menampilkan (Read) seluruh data film beserta daftar review yang tersimpan di dalam ArrayList. 
 
-<img width="1536" height="378" alt="image" src="https://github.com/user-attachments/assets/72316c3a-d3ca-4fe8-b24d-0e5f09b4ae88" />
+<p align="center">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/774bbdf1-0084-4baf-bc5e-f09e9e4778ff" />
+</p>
 
 Jika tidak terdapat data yang tersimpan, maka program akan menampilkan bahwa film atau review yang dimasukkan.  
 
-### Update Review  
+### 2.4. Update Review  
 Menu ke-empat ini digunakan untuk mengubah data (Update) review berdasarkan ID Review. 
 
-<img width="1539" height="350" alt="image" src="https://github.com/user-attachments/assets/caa6652b-b165-433c-bc91-917c751664c6" />
+<p align="center">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/be6a64e1-e81a-415a-a4a9-e9ba8f4e4ab4" />
+</p>
 
 Pengguna dapat memilih untuk memperbarui nilai rating atau ulasan teks. 
 
-### Hapus Review  
+### 2.5. Hapus Review  
 Menu yang ke-lima digunakan untuk menghapus data (Delete) ulasan berdasarkan ID Review dari daftar review.  
 
-<img width="1548" height="209" alt="image" src="https://github.com/user-attachments/assets/586e5bb6-b84b-4a1e-996e-9e210b962c01" />
+<p align="center">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/567d07aa-2874-487b-a64e-06925f85a6b1" />
+</p>
 
-
-### Keluar  
+### 2.6. Keluar  
 Menu yang terakhir adalah menu keluar yang digunakan untuk menghentikan perulangan menu, menutup scanner, dan mengakhiri program.  
 
-<img width="822" height="389" alt="image" src="https://github.com/user-attachments/assets/d2200c7e-6eef-4c7c-b238-c93338cb2842" />
+<p align="center">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/b16fb70b-d8a7-495e-aaf7-38f277d603ee" />
+</p>
 
 
 ## 3. Penerapan Nilai Tambah  
