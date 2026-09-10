@@ -8,8 +8,9 @@ Program ini menerapkan konsep dasar Program Berorientasi Objek (PBO) dengan meng
 ## 2. Alur Program
 Program ini dimulai dengan menampilkan menu utama. Pengguna dapat memilih menu menggunakan input angka.  
 
-
-
+<p align="center">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/8b4a12ee-203c-43e9-853c-1bd1a7442776" />
+</p>
 
 Setiap pilihan yang di-input akan menjalankan proses yang berbeda, kemudian program menjalankan looping (kembali ke menu utama) sampai pengguna memilih menu ke 6, yaitu Keluar.  
 
@@ -17,7 +18,7 @@ Setiap pilihan yang di-input akan menjalankan proses yang berbeda, kemudian prog
 Menu pertama adalah menu tambah film (Create) yang digunakan untuk menambahkan data film baru. Pengguna dapat mengisi ID film, judul, sutradara, tahun rilis, genre, dan durasi. 
 
 <p align="center">
-<img width="1563" height="552" alt="image" src="https://github.com/user-attachments/assets/24f62e8a-1422-49b0-a7f1-9d3e77923efc" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/24f62e8a-1422-49b0-a7f1-9d3e77923efc" />
 </p>
 
 Saat memasukkan ID, sistem memvalidasi apakah ID sudah digunakan atau belum, hal ini dilakukan untuk mencegah agar tidak adanya data ID yang duplikat.  
@@ -26,7 +27,7 @@ Saat memasukkan ID, sistem memvalidasi apakah ID sudah digunakan atau belum, hal
 Menu kedua yaitu menu untuk menambahkan (Create) ulasan dan juga rating pada film yang sudah disimpan. Pengguna memasukkan ID film yang ingin di-review, ID review, nilai rating (1 - 5), dan ulasan berupa teks. 
 
 <p align="center">
-<img width="1563" height="508" alt="image" src="https://github.com/user-attachments/assets/0a4b8af2-aadf-44a4-a41e-939284433e2b" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/0a4b8af2-aadf-44a4-a41e-939284433e2b" />
 </p>
 
 Pada menu ini, sistem juga memvalidasi apakah ID Film yang dimasukkan ada di dalam list, dan apakah ID Review sudah digunakan atau belum.  
