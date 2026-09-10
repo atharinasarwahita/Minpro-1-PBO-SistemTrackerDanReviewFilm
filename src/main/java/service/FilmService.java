@@ -65,7 +65,7 @@ public void tambahReview() {
     if (!input.hasNextInt()) {
         System.out.println("ID harus berupa angka!");
         input.nextLine();
-    return;
+        return;
     }
     int cariFilm = input.nextInt();
     input.nextLine();
@@ -79,6 +79,7 @@ public void tambahReview() {
             if (!input.hasNextInt()) {
                 System.out.println("ID harus berupa angka!");
                 input.nextLine();
+                return;
             }
             int idReview = input.nextInt();
                 input.nextLine();
@@ -101,8 +102,8 @@ public void tambahReview() {
             input.nextLine();
 
             if (rating < 1.0 || rating > 5.0) {
-            System.out.println("Rating harus di antara 1.0 sampai 5.0!");
-            return;
+                System.out.println("Rating harus di antara 1.0 sampai 5.0!");
+                return;
             }
 
             System.out.print("Masukkan Ulasan Film: ");
@@ -200,20 +201,22 @@ public void hapusReview(){
     lihatFilm();
     if (daftarReview.isEmpty()) {
         return;
-    }  
-        if (!input.hasNextInt()) {
-            System.out.println("ID harus berupa angka!");
-            input.nextLine();
+    }
+    
+    System.out.print("Masukkan ID Review yang mau dihapus: ");
+    if (!input.hasNextInt()) {
+        System.out.println("ID harus berupa angka!");
+        input.nextLine();
         return;
         }
-        int hapusReview = input.nextInt();
-        input.nextLine();
+    int hapusReview = input.nextInt();
+    input.nextLine();
         
-        for (Review r : daftarReview) {
-            if (r.getIdReview() == hapusReview) {
-                daftarReview.remove(r);
-                System.out.println("Review berhasil dihapus!");  
-                return;
+    for (Review r : daftarReview) {
+        if (r.getIdReview() == hapusReview) {
+            daftarReview.remove(r);
+            System.out.println("Review berhasil dihapus!");  
+            return;
             }
         }
         System.out.println("ID Review tidak ditemukan!");
