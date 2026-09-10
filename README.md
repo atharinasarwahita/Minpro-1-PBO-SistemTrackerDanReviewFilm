@@ -64,26 +64,25 @@ Menu yang terakhir adalah menu keluar yang digunakan untuk menghentikan perulang
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/b16fb70b-d8a7-495e-aaf7-38f277d603ee" />
 </p>
 
-
 ## 3. Penerapan Nilai Tambah  
 
-### Access Modifier  
+### 3.1. Access Modifier  
 Access Modifier pada program ini diterapkan pada seluruh atribut pada class Film dan Review bersifat private dan hanya dapat diakses melalui method public, seperti getter, setter, dan service (CRUD).  
 
-<img width="558" height="125" alt="image" src="https://github.com/user-attachments/assets/32d02aaf-cd70-4f94-b414-3ba47e1fd2d4" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/32d02aaf-cd70-4f94-b414-3ba47e1fd2d4" />
 
 Access Modifier ini digunakan agar data antar class tidak dapat diakses sembarangan.  
 
-## Encapsulation  
+## 3.2. Encapsulation  
 Data pada class Film dan Review menggunakan atribut private. Pembacaan data dari luar class wajib melalui getter (contoh: getIdReview()), sedangkan pembaruan data dilakukan melalui setter (contoh: setRating()).  
 
-<img width="769" height="338" alt="image" src="https://github.com/user-attachments/assets/c2fb17fc-9773-45e0-a81f-7a19dedc5a02" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/c2fb17fc-9773-45e0-a81f-7a19dedc5a02" />
 
 Encapsulation digunakan untuk menjaga konsistensi dan keamanan data yang digunakan.  
 
-## Validasi Input  
+## 3.3. Validasi Input  
 Penerapan validasi input bertujuan untuk mencegah program eror (crash) saat menginput kesalahan pada tipe data dan memastikan input sesuai dengan logika program. pengecekan dilakukan saat pengguna memasukkan data pada output.  
 
-<img width="716" height="169" alt="image" src="https://github.com/user-attachments/assets/3d5842df-fc56-41a9-9c93-a45344984a78" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/3d5842df-fc56-41a9-9c93-a45344984a78" />
 
 Pengecekan menggunakan hasNextInt() dan hasNextDouble() digunakan untuk menolak input berupa huruf saat meminta angka, perulangan while(true) digunakan untuk membatasi nilai rating wajib berada di rentang 1.0 sampai 5.0, serta pengecekan ID dilakukan untuk mencegah adanya duplikasi ID Film dan ID Review.
