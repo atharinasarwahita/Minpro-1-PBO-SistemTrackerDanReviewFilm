@@ -9,7 +9,7 @@ Program ini menerapkan konsep dasar Program Berorientasi Objek (PBO) dengan meng
 Program ini dimulai dengan menampilkan menu utama. Pengguna dapat memilih menu menggunakan input angka.  
 
 <p align="center">
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/8b4a12ee-203c-43e9-853c-1bd1a7442776" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/8b4a12ee-203c-43e9-853c-1bd1a7442776" />
 </p>
 
 Setiap pilihan yang di-input akan menjalankan proses yang berbeda, kemudian program menjalankan looping (kembali ke menu utama) sampai pengguna memilih menu ke 6, yaitu Keluar.  
