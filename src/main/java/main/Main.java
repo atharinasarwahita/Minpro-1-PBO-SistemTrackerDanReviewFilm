@@ -4,10 +4,6 @@
 
 package main;
 
-/**
- *
- * @author MyBook Hype
- */
 import java.util.Scanner;
 import service.FilmService;
 
