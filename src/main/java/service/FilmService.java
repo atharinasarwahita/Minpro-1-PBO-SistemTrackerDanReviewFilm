@@ -217,7 +217,8 @@ public void hapusReview(){
     for (Review r : daftarReview) {
         if (r.getIdReview() == hapusReview) {
             daftarReview.remove(r);
-            System.out.println("Review berhasil dihapus!");  
+            System.out.println("Review berhasil dihapus!");
+            lihatFilm();
             return;
             }
         }
