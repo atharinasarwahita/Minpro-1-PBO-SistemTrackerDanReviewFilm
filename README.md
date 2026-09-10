@@ -16,14 +16,14 @@ Setiap pilihan yang di-input akan menjalankan proses yang berbeda, kemudian prog
 ### Tambah Film
 Menu pertama adalah menu tambah film (Create) yang digunakan untuk menambahkan data film baru. Pengguna dapat mengisi ID film, judul, sutradara, tahun rilis, genre, dan durasi. 
 
-<img width="940" height="407" alt="image" src="https://github.com/user-attachments/assets/cc6f6260-b913-4635-9ad7-2167d8bf1db4" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/cc6f6260-b913-4635-9ad7-2167d8bf1db4" />
 
 Saat memasukkan ID, sistem memvalidasi apakah ID sudah digunakan atau belum, hal ini dilakukan untuk mencegah agar tidak adanya data ID yang duplikat.  
 
 ### Tambah Review  
 Menu kedua yaitu menu untuk menambahkan (Create) ulasan dan juga rating pada film yang sudah disimpan. Pengguna memasukkan ID film yang ingin di-review, ID review, nilai rating (1 - 5), dan ulasan berupa teks. 
 
-<img width="856" height="348" alt="image" src="https://github.com/user-attachments/assets/4efca0e2-8da7-4d0d-9a12-e9b60bac97b5" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/4efca0e2-8da7-4d0d-9a12-e9b60bac97b5" />
 
 Pada menu ini, sistem juga memvalidasi apakah ID Film yang dimasukkan ada di dalam list, dan apakah ID Review sudah digunakan atau belum.  
 
