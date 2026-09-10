@@ -67,18 +67,14 @@ Menu yang terakhir adalah menu keluar yang digunakan untuk menghentikan perulang
 ## 3. Penerapan Nilai Tambah  
 
 ### 3.1. Access Modifier  
-Access Modifier pada program ini diterapkan pada seluruh atribut pada class Film dan Review bersifat private dan hanya dapat diakses melalui method public, seperti getter, setter, dan service (CRUD).  
+Access Modifier pada program ini diterapkan pada seluruh atribut pada class Film dan Review bersifat private dan hanya dapat diakses melalui method public, seperti getter, setter, dan service (CRUD). Access Modifier ini digunakan agar data antar class tidak dapat diakses sembarangan.  
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/32d02aaf-cd70-4f94-b414-3ba47e1fd2d4" />
 
-Access Modifier ini digunakan agar data antar class tidak dapat diakses sembarangan.  
-
 ## 3.2. Encapsulation  
-Data pada class Film dan Review menggunakan atribut private. Pembacaan data dari luar class wajib melalui getter (contoh: getIdReview()), sedangkan pembaruan data dilakukan melalui setter (contoh: setRating()).  
+Data pada class Film dan Review menggunakan atribut private. Pembacaan data dari luar class wajib melalui getter (contoh: getIdReview()), sedangkan pembaruan data dilakukan melalui setter (contoh: setRating()). Encapsulation digunakan untuk menjaga konsistensi dan keamanan data yang digunakan.  
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/c2fb17fc-9773-45e0-a81f-7a19dedc5a02" />
-
-Encapsulation digunakan untuk menjaga konsistensi dan keamanan data yang digunakan.  
 
 ## 3.3. Validasi Input  
 Penerapan validasi input bertujuan untuk mencegah program eror (crash) saat menginput kesalahan pada tipe data dan memastikan input sesuai dengan logika program. pengecekan dilakukan saat pengguna memasukkan data pada output.  
